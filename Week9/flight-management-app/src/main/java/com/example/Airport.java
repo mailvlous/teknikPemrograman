@@ -1,8 +1,14 @@
 package com.example;
-
+import java.util.logging.Logger;
 
 public class Airport {
+    private static final Logger logger = Logger.getLogger(Airport.class.getName());
+
     public static void main(String[] args) {
+        runExample();
+    }
+
+    public static void runExample() {
         Flight economyFlight = new Flight("1", "Economy");
         Flight businessFlight = new Flight("2", "Business");
 
@@ -14,15 +20,9 @@ public class Airport {
         businessFlight.addPassenger(mike);
         economyFlight.addPassenger(mike);
 
-        System.out.println("Business flight passengers list:");
-        for (Passenger passenger: businessFlight.getPassengersList()) {
-            System.out.println(passenger.getName());
+        logger.info("Economy flight passengers list:");
+        for (Passenger passenger : economyFlight.getPassengersList()) {
+            logger.info(passenger.getName());
         }
-
-        System.out.println("Economy flight passengers list:");
-        for (Passenger passenger: economyFlight.getPassengersList()) {
-            System.out.println(passenger.getName());
-        }
-
     }
 }

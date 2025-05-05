@@ -37,7 +37,7 @@ public class Flight {
                 }
                 return false;
             default:
-                throw new RuntimeException("Unknown type: " + flightType);
+                throw new Flight.UnknownFlightTypeException(flightType);
         }
     }
 
@@ -51,7 +51,14 @@ public class Flight {
             case "Business":
                 return false;
             default:
-                throw new RuntimeException("Unknown type: " + flightType);
+                throw new Flight.UnknownFlightTypeException(flightType);
+        }
+    }
+
+    // ✅ Inner class: exception khusus
+    private static class UnknownFlightTypeException extends RuntimeException {
+        public UnknownFlightTypeException(String flightType) {
+            super("Unknown flight type: " + flightType);
         }
     }
 }

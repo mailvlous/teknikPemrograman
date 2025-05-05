@@ -1,9 +1,5 @@
 package com.example;
 
-/**
- * Hello world!
- *
- */
 public class Passenger {
     private String name;
     private boolean vip;
@@ -20,5 +16,4 @@ public class Passenger {
     public boolean isVip() {
         return vip;
     }
-
 }

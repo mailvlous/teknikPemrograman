@@ -1,0 +1,7 @@
+package com.example;
+
+public class UnknownFlightTypeException extends RuntimeException {
+    public UnknownFlightTypeException(String flightType) {
+        super("Unknown flight type: " + flightType);
+    }
+}

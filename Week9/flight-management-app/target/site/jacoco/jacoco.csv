@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+flight-management-app,com.example,Flight,18,63,2,8,4,16,4,8,2,4
+flight-management-app,com.example,Airport,5,65,0,2,3,14,2,3,2,2
+flight-management-app,com.example,Flight.UnknownFlightTypeException,5,0,0,0,2,0,1,0,1,0
+flight-management-app,com.example,Passenger,0,15,0,0,0,6,0,3,0,3

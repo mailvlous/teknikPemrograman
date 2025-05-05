@@ -1,3 +1,4 @@
 com\example\Flight.class
+com\example\Flight$UnknownFlightTypeException.class
 com\example\Airport.class
 com\example\Passenger.class

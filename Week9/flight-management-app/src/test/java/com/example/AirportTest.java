@@ -1,88 +1,80 @@
 package com.example;
 
+import java.util.logging.Logger;
+
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 public class AirportTest {
 
-    @DisplayName("Given there is an economy flight")
-    @Nested
-    class EconomyFlightTest {
+    private static final Logger logger = Logger.getLogger(AirportTest.class.getName());
 
-        private Flight economyFlight;
+    private Flight economyFlight;
+    private Flight businessFlight;
+    private Passenger mike;
+    private Passenger james;
 
-        @BeforeEach
-        void setUp() {
-            economyFlight = new Flight("1", "Economy");
-        }
+    @Test
+    public void testRunExampleDoesNotThrow() {
+        assertDoesNotThrow(() -> Airport.runExample());
+    }
 
-        @Test
-        public void testEconomyFlightRegularPassenger() {
-            Passenger mike = new Passenger("Mike", false);
+    @BeforeEach
+    void setUp() {
+        economyFlight = new Flight("1", "Economy");
+        businessFlight = new Flight("2", "Business");
+        mike = new Passenger("Mike", false);   // regular
+        james = new Passenger("James", true);  // VIP
+    }
 
-            assertEquals("1", economyFlight.getId());
-            assertTrue(economyFlight.addPassenger(mike));
-            assertEquals(1, economyFlight.getPassengersList().size());
-            assertEquals("Mike", economyFlight.getPassengersList().get(0).getName());
+    @Test
+    public void testEconomyFlightWithRegularPassenger() {
+        logger.info("Test: Regular passenger on Economy flight");
 
-            assertTrue(economyFlight.removePassenger(mike));
-            assertEquals(0, economyFlight.getPassengersList().size());
-        }
+        assertTrue(economyFlight.addPassenger(mike));
+        assertEquals(1, economyFlight.getPassengersList().size());
+        assertEquals("Mike", economyFlight.getPassengersList().get(0).getName());
 
-        @Test
-        public void testEconomyFlightVipPassenger() {
-            Passenger james = new Passenger("James", true);
+        assertTrue(economyFlight.removePassenger(mike));
+        assertEquals(0, economyFlight.getPassengersList().size());
+    }
 
-            assertEquals("1", economyFlight.getId());
-            assertTrue(economyFlight.addPassenger(james));
-            assertEquals(1, economyFlight.getPassengersList().size());
-            assertEquals("James", economyFlight.getPassengersList().get(0).getName());
+    @Test
+    public void testEconomyFlightWithVipPassenger() {
+        logger.info("Test: VIP passenger on Economy flight");
 
-            assertFalse(economyFlight.removePassenger(james));
-            assertEquals(1, economyFlight.getPassengersList().size());
-        }
+        assertTrue(economyFlight.addPassenger(james));
+        assertEquals(1, economyFlight.getPassengersList().size());
+        assertEquals("James", economyFlight.getPassengersList().get(0).getName());
 
-        @DisplayName("Given there is a business flight")
-        
-        @Nested
-        class BusinessFlightTest {
+        assertFalse(economyFlight.removePassenger(james));
+        assertEquals(1, economyFlight.getPassengersList().size());
+    }
 
-            private Flight businessFlight;
+    @Test
+    public void testBusinessFlightWithRegularPassenger() {
+        logger.info("Test: Regular passenger on Business flight");
 
-            @BeforeEach
-            void setUp() {
-                businessFlight = new Flight("2", "Business");
-            }
+        assertFalse(businessFlight.addPassenger(mike));
+        assertEquals(0, businessFlight.getPassengersList().size());
 
-            @Test
-            public void testBusinessFlightRegularPassenger() {
-                Passenger mike = new Passenger("Mike", false);
+        assertFalse(businessFlight.removePassenger(mike));
+        assertEquals(0, businessFlight.getPassengersList().size());
+    }
 
-                assertEquals("2", businessFlight.getId());
-                assertEquals(false, businessFlight.addPassenger(mike));
-                assertEquals(0, businessFlight.getPassengersList().size());
+    @Test
+    public void testBusinessFlightWithVipPassenger() {
+        logger.info("Test: VIP passenger on Business flight");
 
-                assertEquals(false, businessFlight.removePassenger(mike));
-                assertEquals(0, businessFlight.getPassengersList().size());
-            }
+        assertTrue(businessFlight.addPassenger(james));
+        assertEquals(1, businessFlight.getPassengersList().size());
+        assertEquals("James", businessFlight.getPassengersList().get(0).getName());
 
-            @Test
-            public void testBusinessFlightVipPassenger() {
-                Passenger james = new Passenger("James", true);
-
-                assertEquals("2", businessFlight.getId());
-                assertEquals(true, businessFlight.addPassenger(james));
-                assertEquals(1, businessFlight.getPassengersList().size());
-
-                assertEquals(false, businessFlight.removePassenger(james));
-                assertEquals(1, businessFlight.getPassengersList().size());
-            }
-        }
-
+        assertFalse(businessFlight.removePassenger(james));
+        assertEquals(1, businessFlight.getPassengersList().size());
     }
 }

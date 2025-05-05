@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.AirportTest" time="0.038" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.AirportTest" time="0.117" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\LENOVO\AppData\Local\Temp\surefire16556846504541426317\surefirebooter904648560524634424.jar C:\Users\LENOVO\AppData\Local\Temp\surefire16556846504541426317 2025-04-28T14-21-53_297-jvmRun1 surefire3068014461606988195tmp surefire_0151425167684093456tmp"/>
+    <property name="sun.java.command" value="C:\Users\LENOVO\AppData\Local\Temp\surefire15210421948097710622\surefirebooter16858771330757374623.jar C:\Users\LENOVO\AppData\Local\Temp\surefire15210421948097710622 2025-05-06T01-17-28_491-jvmRun1 surefire4861494354038692900tmp surefire_02264235312242299591tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Kulyeah\Teknik Pemrograman\Week9\flight-management-app\target\test-classes;D:\Kulyeah\Teknik Pemrograman\Week9\flight-management-app\target\classes;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\LENOVO\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\LENOVO\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\LENOVO\AppData\Local\Temp\surefire16556846504541426317\surefirebooter904648560524634424.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\LENOVO\AppData\Local\Temp\surefire15210421948097710622\surefirebooter16858771330757374623.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.7+8-LTS-245"/>
@@ -50,7 +50,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\msys64\mingw64\bin;C:\MinGW\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Users\LENOVO\AppData\Local\Programs\Python\Python313;C:\Program Files;C:\Program Files\Go\bin;C:\Program Files\Go;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Java\jdk-21;C:\Program Files\Apache\Maven\apache-maven-3.8.8\bin;C:\Program Files\Apache\Maven\apache-maven-3.8.8;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\LENOVO\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\LENOVO\AppData\Local\Programs\Python\Python313\;C:\Users\LENOVO\AppData\Local\Microsoft\WindowsApps;C:\Users\LENOVO\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\msys64\mingw64\bin;C:\Users\LENOVO\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\bin;C:\Users\LENOVO\AppData\Local\Programs\Python\Python313;C:\Program Files;C:\Users\LENOVO\go\bin;C:\Program Files\Go;C:\Program Files\Go\bin;C:\Program Files\Apache\Maven\apache-maven-3.8.8\bin;C:\Program Files\Apache\Maven\apache-maven-3.8.8\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Java\jdk-21;;c:\Users\LENOVO\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\msys64\mingw64\bin;C:\MinGW\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Users\LENOVO\AppData\Local\Programs\Python\Python313;C:\Program Files;C:\Program Files\Go\bin;C:\Program Files\Go;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Java\jdk-21;C:\Program Files\Apache\Maven\apache-maven-3.8.8\bin;C:\Program Files\Apache\Maven\apache-maven-3.8.8;;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\LENOVO\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\LENOVO\AppData\Local\Programs\Python\Python313\;C:\Users\LENOVO\AppData\Local\Microsoft\WindowsApps;C:\Users\LENOVO\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\msys64\mingw64\bin;C:\Users\LENOVO\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\bin;C:\Users\LENOVO\AppData\Local\Programs\Python\Python313;C:\Program Files;C:\Users\LENOVO\go\bin;C:\Program Files\Go;C:\Program Files\Go\bin;C:\Program Files\Apache\Maven\apache-maven-3.8.8\bin;C:\Program Files\Apache\Maven\apache-maven-3.8.8\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Java\jdk-21;;c:\Users\LENOVO\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
@@ -58,8 +58,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testEconomyFlightRegularPassenger" classname="com.example.AirportTest$EconomyFlightTest" time="0.027"/>
-  <testcase name="testEconomyFlightVipPassenger" classname="com.example.AirportTest$EconomyFlightTest" time="0.002"/>
-  <testcase name="testBusinessFlightVipPassenger" classname="com.example.AirportTest$EconomyFlightTest$BusinessFlightTest" time="0"/>
-  <testcase name="testBusinessFlightRegularPassenger" classname="com.example.AirportTest$EconomyFlightTest$BusinessFlightTest" time="0"/>
+  <testcase name="testEconomyFlightWithVipPassenger" classname="com.example.AirportTest" time="0.086"/>
+  <testcase name="testBusinessFlightWithVipPassenger" classname="com.example.AirportTest" time="0.002"/>
+  <testcase name="testRunExampleDoesNotThrow" classname="com.example.AirportTest" time="0.006"/>
+  <testcase name="testEconomyFlightWithRegularPassenger" classname="com.example.AirportTest" time="0.004"/>
+  <testcase name="testBusinessFlightWithRegularPassenger" classname="com.example.AirportTest" time="0.003"/>
 </testsuite>
